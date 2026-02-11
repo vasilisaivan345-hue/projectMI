@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя личная страница</title>
+    <style>
+        @import url('fonts/main_font.css');
+
+        * {
+            margin: 0;
+            font-family: 'StratosSkyeng', sans-serif;
+        }
+
+        .content {
+            background-size: cover;
+            min-height: 100vh;
+            padding: 40px 0;
+            background-color: #9cd6f8;
+        }
+
+        /* Навигационное меню */
+        .navigation {
+            background-color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            background-color: #c26ef3;
+            color: white;
+        }
+
+        .nav-menu .active {
+            background-color: #42a6f8;
+            color: white;
+        }
+
+        .page-content {
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #666;
+            font-size: 24px;
+            margin: 30px 0 15px 0;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        p {
+            color: #444;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .content-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-height: 500px;
+        }
+
+        .image-caption {
+            color: #777;
+            font-size: 14px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .in-one-line {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            justify-content: center;
+        }
+        
+        .center {
+            padding-left: calc(50% - 500px);  
+            padding-right: calc(50% - 500px);
+        }
+
+        /* Стили для страниц фактов, мемов и цитат */
+        .facts-page {
+            background-color: #e3f2fd;
+        }
+
+        .memes-page {
+            background-color: #fff3e0;
+        }
+
+        .quotes-page {
+            background-color: #f3e5f5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигационное меню -->
+    <div class="navigation">
+        <div class="center">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="facts.html">Факты</a></li>
+                <li><a href="memes.html">Мемы</a></li>
+                <li><a href="quotes.html">Цитаты</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="center">
+            <div class="page-content">
+                <h1>Добро пожаловать на мою личную страницу</h1>
+                
+                <p>привет, я василиса и мне 16 лет.</p>
+                
+                <h2>Обо мне</h2>
+                
+                <p>Я увлекаюсь рисованием и даже ходила в художку, так же я очень долго занималась танцами.</p>
+                
+                <div class="image-container">
+                    <img src="images/goose.jpeg.jpg" 
+                         alt="Моя фотография" 
+                         class="content-image">
+                    <div class="image-caption">Это я</div>
+                </div>
+                
+                <div class="in-one-line">
+                    <p>Факт обо мне: у меня есть кошка</p>
+                    <p>Факт обо мне 2: я люблю рисовать</p>
+                    <p>Факт обо мне 3: мое любимое число 6</p>
+                </div>
+                
+                <h2>Мои будущие цели</h2>
+                
+                <p>Я хочу заниматся творческой работой и попробовать много нового.</p>
+                
+                <p>Спасибо, что посетили мою страницу!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интересные факты</title>
+    <style>
+        @import url('fonts/main_font.css');
+
+        * {
+            margin: 0;
+            font-family: 'StratosSkyeng', sans-serif;
+        }
+
+        .content {
+            background-size: cover;
+            min-height: 100vh;
+            padding: 40px 0;
+            background-color: #f3fde3;
+        }
+
+        .navigation {
+            background-color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            background-color: #c26ef3;
+            color: white;
+        }
+
+        .nav-menu .active {
+            background-color: #9fe74d;
+            color: white;
+        }
+
+        .page-content {
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2c3518;
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #dffbbb;
+        }
+
+        .fact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .fact-list li {
+            background-color: #f1f8ff;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #c4f576;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .center {
+            padding-left: calc(50% - 500px);  
+            padding-right: calc(50% - 500px);
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="center">
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="facts.html" class="active">Факты</a></li>
+                <li><a href="memes.html">Мемы</a></li>
+                <li><a href="quotes.html">Цитаты</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="center">
+            <div class="page-content">
+                <h1>Интересные факты</h1>
+                
+                <ul class="fact-list">
+                    <li>За одну секунду в головном мозге человека происходит около 100 000 химических реакций.</li>
+                    <li>Дети рождаются без коленных чашечек; они формируются только в возрасте от 2 до 6 лет</li>
+                    <li>Среднее облако весит около 500 тонн, что эквивалентно весу 80 слонов.</li>
+                    <li>Земля на самом деле не является идеальным шаром, она немного сплюснута у полюсов.</li>
+                    <li>В природе существуют попугаи (кеа), которые охотятся на овец.</li>
+                    <li>Сам по себе пот не имеет запаха; неприятный аромат появляется из-за бактерий, живущих на коже. </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
